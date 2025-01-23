@@ -1,13 +1,37 @@
-## ⚠️ Observação!
-Com o VSCode versão 1.94, a extensão APC quebrou e ainda não há solução.
+## Settings.json
 
-Então, para aqueles que estão tendo problemas com o APC após a atualização do VSCode, recomendo baixar a versão anterior do VSCode por enquanto ( https://code.visualstudio.com/updates/v1_93 ) e definir as atualizações para manual adicionando isto à configuração do editor:
+### VSCode minimalista
+aqui estão as configurações do meu vscode
 
-    "update.mode": "manual",
 
-## ⚠️ Note!
-With VSCode version 1.94, the APC extension broke and there is no fix yet.
-
-So, for those having issues with APC after the VSCode update, I recommend downloading the previous version of VSCode for now (https://code.visualstudio.com/updates/v1_93) and setting updates to manual by adding this to the editor's configuration:
-
-    "update.mode": "manual",
+    {
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Min Dark",
+    "workbench.iconTheme": "symbols",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.labelFormat": "short",
+    "workbench.layoutControl.enabled": false,
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    }
