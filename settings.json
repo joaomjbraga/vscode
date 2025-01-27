@@ -13,14 +13,16 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.location": "hidden",
   "workbench.editor.labelFormat": "short",
+  "workbench.statusBar.visible": false,
   "workbench.layoutControl.enabled": false,
   "explorer.compactFolders": false,
   "breadcrumbs.enabled": false,
   "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "compact",
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontLigatures": true,
-  "workbench.statusBar.visible": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "security.workspace.trust.untrustedFiles": "open"
 }
