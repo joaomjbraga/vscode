@@ -1,7 +1,6 @@
 # 🖥️ Configurações Minimalistas do meu VSCode  
 
 Um setup focado em **simplicidade**, **produtividade** e **design clean** para programar com o Visual Studio Code!  
-
 ---
 
 ## ✨ Destaques do Setup  
