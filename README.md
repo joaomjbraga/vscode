@@ -1,5 +1,10 @@
 # 🖥️ Configurações Minimalistas do meu VSCode  
 
+
+## extras para o nautilos
+    sudo apt install folder-color gnome-sushi
+
+extra que vai ajudar na organização
 ```json
 {
   "editor.fontSize": 14,
