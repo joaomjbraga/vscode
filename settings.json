@@ -1,22 +1,42 @@
 {
-  "editor.fontSize": 14,
-  "editor.fontWeight": "bold",
-  "editor.lineHeight": 1.8,
-  "editor.renderLineHighlight": "gutter",
-  "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.semanticHighlighting.enabled": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.activityBar.location": "default",
-  "workbench.editor.labelFormat": "short",
-  "workbench.statusBar.visible": true,
-  "workbench.layoutControl.enabled": false,
-  "explorer.compactFolders": false,
-  "breadcrumbs.enabled": false,
-  "window.commandCenter": false,
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "compact",
-  "terminal.integrated.fontSize": 14
-}
+  // Editor de Textos
+    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, Courier New, monospace",
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0,
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "relative",
+    "editor.stickyScroll.enabled": false,
+    // Workbrnch
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.iconTheme": "symbols",
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "default",
+    "workbench.editor.labelFormat": "short",
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.indent": 16,
+    "workbench.statusBar.visible": false,
+    // Explorer
+    "explorer.compactFolders": false,
+    // Breadcrumbs
+    "breadcrumbs.enabled": false,
+    // Window - Janela
+    "window.commandCenter": false,
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "hidden",
+    // Terminal
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.tabs.enabled": false,
+    // Git
+    "git.autofetch": true,
+  }
