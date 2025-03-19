@@ -16,8 +16,6 @@
     "editor.lineNumbers": "relative",
     "editor.stickyScroll.enabled": false,
     // Workbrnch
-    "workbench.colorTheme": "Rosé Pine Moon",
-    "workbench.iconTheme": "symbols",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "default",
     "workbench.editor.labelFormat": "short",
@@ -31,7 +29,7 @@
     // Window - Janela
     "window.commandCenter": false,
     "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     // Terminal
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.fontSize": 13,
@@ -39,4 +37,7 @@
     "terminal.integrated.tabs.enabled": false,
     // Git
     "git.autofetch": true,
+    // Themes
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "workbench.iconTheme": "symbols",
   }
