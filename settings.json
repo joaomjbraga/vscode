@@ -40,5 +40,7 @@
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.tabs.enabled": false,
     // Git
-    "git.autofetch": true
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
+
