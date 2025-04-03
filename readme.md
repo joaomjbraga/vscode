@@ -1,11 +1,7 @@
-# ⚙️ Minhas Configurações Pessoais do VS Code
+# ⚙️ Minhas Configurações
 
-Este é o meu setup pessoal do Visual Studio Code — focado em produtividade, minimalismo e conforto visual no desenvolvimento.  
-Ideal para quem busca uma interface limpa e sem distrações.
-
-> 🔧 Desenvolvido e usado por **João Marcos**
-
----
+Este é o meu setup do Visual Studio Code — focado em produtividade, minimalismo e conforto visual no desenvolvimento.  
+Interface limpa e sem distrações.
 
 ## 📝 Editor de Texto
 
