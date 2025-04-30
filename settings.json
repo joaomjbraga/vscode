@@ -1,8 +1,39 @@
 {
-    "workbench.startupEditor": "none",
+    // Editor de Textos
+    "editor.fontSize": 13,
+    "editor.lineHeight": 22,
+    "editor.letterSpacing": 0,
+    "editor.renderLineHighlight": "gutter",
     "editor.wordWrap": "on",
-    "breadcrumbs.enabled": false,
-    "editor.stickyScroll.enabled": false,
-    "explorer.compactFolders": false,
     "editor.minimap.enabled": false,
-}
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "relative",
+    "editor.rulers": [],
+    "editor.stickyScroll.enabled": false,
+  
+    // Workbench
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "default",
+    "workbench.editor.labelFormat": "default",
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.indent": 16,
+    "workbench.statusBar.visible": false,
+  
+    // Explorer
+    "explorer.compactFolders": false,
+  
+    // Breadcrumbs
+    "breadcrumbs.enabled": false,
+  
+    // Window - Janela
+    "window.commandCenter": false,
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "hidden",
+  
+    // Terminal
+    "terminal.integrated.fontSize": 13,  
+  }
+  
