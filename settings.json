@@ -17,7 +17,7 @@
     // Workbench
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "default",
-    "workbench.editor.labelFormat": "default",
+    "workbench.editor.labelFormat": "short",
     "workbench.layoutControl.enabled": false,
     "workbench.tree.indent": 16,
     "workbench.statusBar.visible": false,
@@ -34,6 +34,6 @@
     "window.menuBarVisibility": "hidden",
   
     // Terminal
-    "terminal.integrated.fontSize": 13,  
+    "terminal.integrated.fontSize": 13,   
   }
   
