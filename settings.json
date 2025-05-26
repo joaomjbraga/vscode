@@ -1,9 +1,5 @@
 {
     // Editor de Textos
-    "editor.fontSize": 13,
-    "editor.lineHeight": 22,
-    "editor.letterSpacing": 0,
-    "editor.renderLineHighlight": "gutter",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
@@ -32,8 +28,4 @@
     "window.commandCenter": false,
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "hidden",
-  
-    // Terminal
-    "terminal.integrated.fontSize": 13,   
   }
-  
