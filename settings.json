@@ -1,31 +1,159 @@
 {
-    // Editor de Textos
-    "editor.wordWrap": "on",
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.semanticHighlighting.enabled": false,
-    "editor.cursorBlinking": "solid",
-    "editor.lineNumbers": "relative",
-    "editor.rulers": [],
-    "editor.stickyScroll.enabled": false,
-  
-    // Workbench
-    "workbench.startupEditor": "none",
-    "workbench.activityBar.location": "default",
-    "workbench.editor.labelFormat": "short",
-    "workbench.layoutControl.enabled": false,
-    "workbench.tree.indent": 16,
-    "workbench.statusBar.visible": false,
-  
-    // Explorer
-    "explorer.compactFolders": false,
-  
-    // Breadcrumbs
-    "breadcrumbs.enabled": false,
-  
-    // Window - Janela
-    "window.commandCenter": false,
-    "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "hidden",
-  }
+  // === AÇÕES AO SALVAR ===
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",             // Corrige erros automaticamente (ex: ESLint, TypeScript)
+    "source.organizeImports": "always"     // Organiza automaticamente os imports
+  },
+
+  // === FORMATAÇÃO COM PRETTIER ===
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",  // Usa Prettier para JS
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",  // Usa Prettier para TS
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",  // Usa Prettier para JSX
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",  // Usa Prettier para TSX
+    "editor.formatOnSave": true
+  },
+  "prettier.configPath": ".prettierrc",                   // Arquivo de config do Prettier
+
+  // === CONFIGURAÇÕES DO EDITOR ===
+  "editor.wordWrap": "on",                        // Quebra automática de linha
+  "editor.minimap.enabled": false,                // Oculta minimapa
+  "editor.scrollbar.horizontal": "hidden",        // Oculta barra horizontal
+  "editor.scrollbar.vertical": "hidden",          // Oculta barra vertical
+  "editor.semanticHighlighting.enabled": false,   // Desativa realce semântico
+  "editor.cursorBlinking": "solid",               // Cursor fixo (sem piscar)
+  "editor.rulers": [],                            // Nenhuma linha guia vertical
+  "editor.stickyScroll.enabled": false,           // Desativa "sticky scroll"
+  "editor.tabSize": 2,                            // Tamanho da tabulação
+  "editor.insertSpaces": true,                    // Usa espaços ao invés de tabs
+  "editor.detectIndentation": false,              // Usa sempre a configuração fixa de indentação
+  "editor.inlineSuggest.suppressSuggestions": true, // Desativa sugestões inline como Copilot
+
+  // === FONTES DO EDITOR COM FALLBACK ===
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Source Code Pro', Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', monospace",
+  "editor.fontSize": 14,                          // Tamanho da fonte
+  "editor.lineHeight": 1.8,                       // Altura de linha aumentada (mais legível)
+  "editor.fontLigatures": true,                   // Ativa ligaduras para fontes que suportam
+
+  // === APARÊNCIA GERAL (WORKBENCH) ===
+  "workbench.startupEditor": "none",              // Não abrir tela inicial
+  "workbench.activityBar.location": "default",    // Barra lateral esquerda
+  "workbench.editor.labelFormat": "short",        // Mostra apenas o nome do arquivo nas abas
+  "workbench.layoutControl.enabled": false,       // Oculta botão de layout
+  "workbench.tree.indent": 16,                    // Espaçamento entre níveis no explorer
+  "workbench.statusBar.visible": false,           // Oculta barra de status inferior
+  "workbench.iconTheme": "a-file-icon-vscode",    // Tema de ícones de arquivos
+
+  // === EXPLORER (ARQUIVOS) ===
+  "explorer.compactFolders": false,               // Mostra estrutura de pastas completa
+  "explorer.confirmDelete": false,                // Não pede confirmação ao deletar
+  "explorer.confirmDragAndDrop": false,           // Não pede confirmação ao mover arquivos
+  "explorer.sortOrder": "foldersNestsFiles",      // Pastas antes dos arquivos
+  "explorer.fileNesting.enabled": true,           // Ativa agrupamento de arquivos por padrão
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+
+  // Oculta arquivos/pastas que geralmente não são úteis para leitura direta
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.vscode": true,
+    "**/*.log": true
+  },
+
+  // === BREADCRUMBS ===
+  "breadcrumbs.enabled": false,                   // Desativa o caminho de arquivos no topo do editor
+
+  // === JANELA E MENU SUPERIOR ===
+  "window.commandCenter": false,                  // Oculta botão de comando na barra de título
+  "window.titleBarStyle": "native",               // Usa barra de título nativa do sistema
+  "window.menuBarVisibility": "hidden",           // Oculta menu superior
+
+  // === TERMINAL INTEGRADO ===
+  "terminal.integrated.allowEnvironmentChanges": "never", // Impede que extensões reiniciem o terminal
+  "terminal.integrated.fontSize": 14,                     // Tamanho da fonte no terminal
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', 'Source Code Pro', Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', monospace",
+  "terminal.integrated.gpuAcceleration": "on",            // Aceleração por GPU para terminal
+  "terminal.integrated.showExitAlert": false,             // Sem alerta ao sair do terminal
+  "terminal.integrated.defaultProfile.osx": "fish",       // Shell padrão no macOS
+  "terminal.integrated.shellArgs.linux": ["--login"],     // Usa terminal login no Linux
+  "terminal.integrated.shellArgs.osx": ["-l"],            // Usa terminal login no macOS
+
+  // === SUGESTÕES E IMPORTS ===
+  "javascript.suggest.autoImports": true,                 // Sugestões de auto-import para JS
+  "typescript.suggest.autoImports": true,                 // Sugestões de auto-import para TS
+  "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza imports automaticamente ao mover arquivos
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true, // Usa `import type` quando possível
+
+  // === ESLINT ===
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "graphql"
+  ],
+
+  // === COMPORTAMENTO DO EDITOR ===
+  "editor.acceptSuggestionOnCommitCharacter": false, // Evita aceitar sugestões com caracteres como `.` ou `;`
+  "editor.accessibilitySupport": "off",              // Melhora performance desativando acessibilidade
+
+  // === GIT ===
+  "git.enableSmartCommit": true,                     // Permite commit direto se não houver mensagem
+  "git.autofetch": true,                             // Busca remota automaticamente
+  "git.confirmSync": false,                          // Não pede confirmação ao sincronizar
+  "git.decorations.enabled": true,                   // Mostra alterações nos arquivos via ícones
+
+  // === GITLENS ===
+  "gitlens.codeLens.authors.enabled": true,          // Mostra autor acima da função
+  "gitlens.codeLens.recentChange.enabled": true,     // Mostra última alteração acima da função
+
+  // === ATUALIZAÇÃO DO VS CODE ===
+  "update.mode": "manual",                           // Atualizações manuais
+  "update.showReleaseNotes": false,                  // Não mostra changelog ao atualizar
+
+  // === SEGURANÇA E EXTENSÕES ===
+  "security.workspace.trust.untrustedFiles": "newWindow",  // Abre arquivos não confiáveis em nova janela
+  "liveServer.settings.donotShowInfoMsg": true,            // Oculta mensagens do Live Server
+  "database-client.autoSync": true,                        // Atualiza banco de dados automaticamente
+
+  // === AUTO SALVAMENTO ===
+  "files.autoSave": "onFocusChange",                // Salva ao trocar de aba ou sair do editor
+  "files.autoSaveDelay": 1000,                      // (backup para delay, caso o modo fosse `afterDelay`)
+
+  // === NAVEGAÇÃO ENTRE ABAS ===
+  "workbench.editor.enablePreview": false,          // Abre arquivos sempre em nova aba
+  "workbench.editor.openSideBySideDirection": "right", // Abre arquivos lado a lado à direita
+  "workbench.editor.closeOnFileDelete": true,       // Fecha a aba quando o arquivo for deletado
+  "workbench.editor.tabCloseButton": "right",       // Botão de fechar à direita
+  "workbench.editor.showIcons": true,               // Mostra ícones nas abas
+
+  // === SUGESTÕES AVANÇADAS ===
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // Permite sugestões junto com snippets
+  "editor.suggest.showWords": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggestSelection": "first",                     // Seleciona a primeira sugestão
+
+  // === PERFORMANCE ===
+  "search.followSymlinks": false,                 // Ignora symlinks em buscas
+  "extensions.autoCheckUpdates": false,           // Desativa verificação automática de updates
+  "extensions.autoUpdate": false,
+  "workbench.editor.tabActionLocation": "right" // Desativa atualização automática de extensões
+}
