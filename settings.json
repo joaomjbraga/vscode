@@ -46,7 +46,6 @@
   "editor.inlayHints.enabled": "off",                   // Desativa inlay hints para menos distrações.
 
   // === FONTES DO EDITOR COM FALLBACK ===
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Source Code Pro', Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', monospace", // Fallback de fontes.
   "editor.fontSize": 14,                                // Tamanho da fonte.
   "editor.lineHeight": 1.8,                             // Altura da linha.
   "editor.fontLigatures": true,                         // Ativa ligaduras (ex.: ícones para "==>", "===").
@@ -91,16 +90,12 @@
   // === JANELA E MENU SUPERIOR ===
   "window.commandCenter": false,                        // Oculta barra de comandos superior.
   "window.titleBarStyle": "native",                     // Usa barra de título do sistema.
-  "window.menuBarVisibility": "hidden",                 // Oculta barra de menu.
+  "window.menuBarVisibility": "toggle",                 // Oculta barra de menu.
 
   // === TERMINAL INTEGRADO ===
-  "terminal.integrated.allowEnvironmentChanges": "never", // Impede mudanças de env. via terminal.
   "terminal.integrated.fontSize": 14,                     // Tamanho da fonte do terminal.
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', 'Source Code Pro', Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Courier New', monospace", // Fontes do terminal.
   "terminal.integrated.gpuAcceleration": "on",            // Aceleração GPU para terminal.
   "terminal.integrated.showExitAlert": false,             // Oculta alerta ao fechar terminal.
-  "terminal.integrated.shellArgs.linux": ["--login"],     // Shell args Linux.
-  "terminal.integrated.shellArgs.osx": ["-l"],            // Shell args macOS.
 
   // === SUGESTÕES E IMPORTS ===
   "javascript.suggest.autoImports": true,                  // Autoimport JS.
@@ -149,7 +144,6 @@
   "workbench.editor.enablePreview": false,                 // Desativa preview ao abrir arquivos.
   "workbench.editor.openSideBySideDirection": "right",     // Abre arquivos lado a lado à direita.
   "workbench.editor.closeOnFileDelete": true,              // Fecha abas de arquivos deletados.
-  "workbench.editor.tabCloseButton": "right",              // Botão de fechar à direita.
   "workbench.editor.showIcons": true,                      // Mostra ícones nas abas.
 
   // === SUGESTÕES AVANÇADAS ===
@@ -163,14 +157,4 @@
   "extensions.autoCheckUpdates": false,                    // Não checa updates automáticos.
   "extensions.autoUpdate": false,                          // Não atualiza extensões automaticamente.
   "workbench.editor.tabActionLocation": "right",           // Botões de ação em abas à direita.
-
-  // === REACT NATIVE E ELECTRON (MOBILE E DESKTOP) ===
-  "react-native-tools.showWelcomeMessage": false,          // Desativa mensagem inicial do plugin.
-  "react-native-tools.showReactNativeDebug": true,         // Ativa debug para React Native.
-  "debug.javascript.usePreview": false,                    // Usa debugger estável.
-  "javascript.validate.enable": true,                      // Validação de JS.
-  "emmet.includeLanguages": {                              // Emmet para JSX/TSX em Electron/RN.
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  }
 }
