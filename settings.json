@@ -1,40 +1,9 @@
 {
-  // === AÇÕES AO SALVAR ===
-  // Aplica correções automáticas (ex.: ESLint, Prettier) ao salvar.
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "always",             // Corrige tudo ao salvar (linter, etc.)
-    "source.organizeImports": "always"     // Organiza imports ao salvar.
-  },
-
-  // === FORMATAÇÃO COM PRETTIER ===
-  // Configuração para usar Prettier em arquivos JS/TS/JSON ao salvar.
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "prettier.configPath": ".prettierrc",    // Caminho para o arquivo de configuração do Prettier.
-
   // === CONFIGURAÇÕES DO EDITOR ===
   "editor.wordWrap": "on",                              // Quebra automática de linhas.
   "editor.minimap.enabled": false,                      // Desativa o minimapa.
   "editor.scrollbar.horizontal": "hidden",              // Oculta scrollbar horizontal.
-  "editor.scrollbar.vertical": "hidden",                // Oculta scrollbar vertical.
+  "editor.scrollbar.vertical": "auto",                // Oculta scrollbar vertical.
   "editor.semanticHighlighting.enabled": false,         // Desativa realce semântico.
   "editor.cursorBlinking": "solid",                     // Cursor sólido (não piscante).
   "editor.rulers": [],                                  // Remove linhas guias.
@@ -43,12 +12,10 @@
   "editor.insertSpaces": true,                          // Usa espaços em vez de tabs.
   "editor.detectIndentation": false,                    // Não detecta indentação automática.
   "editor.inlineSuggest.suppressSuggestions": true,     // Suprime sugestões inline.
-  "editor.inlayHints.enabled": "off",                   // Desativa inlay hints para menos distrações.
-
+ 
   // === FONTES DO EDITOR COM FALLBACK ===
   "editor.fontSize": 14,                                // Tamanho da fonte.
   "editor.lineHeight": 1.8,                             // Altura da linha.
-  "editor.fontLigatures": true,                         // Ativa ligaduras (ex.: ícones para "==>", "===").
 
   // === APARÊNCIA GERAL (WORKBENCH) ===
   "workbench.startupEditor": "none",                    // Sem editor inicial ao abrir VS Code.
@@ -56,7 +23,6 @@
   "workbench.editor.labelFormat": "short",              // Nome curto na aba do editor.
   "workbench.layoutControl.enabled": false,             // Desativa controle de layout.
   "workbench.tree.indent": 16,                          // Indentação do explorador.
-  "workbench.statusBar.visible": false,                 // Oculta status bar.
   "workbench.iconTheme": "a-file-icon-vscode",          // Tema de ícones de arquivos.
   "workbench.colorTheme": "Default Dark Modern",        // Tema visual do VS Code.
 
@@ -64,25 +30,6 @@
   "explorer.compactFolders": false,                     // Desativa pastas compactadas.
   "explorer.confirmDelete": false,                      // Não confirma ao deletar.
   "explorer.confirmDragAndDrop": false,                 // Não confirma ao arrastar/soltar.
-  "explorer.sortOrder": "foldersNestsFiles",            // Ordem de exibição: pastas, aninhados, arquivos.
-  "explorer.fileNesting.enabled": true,                 // Ativa aninhamento de arquivos relacionados.
-  "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
-    "tailwind.config.*": "tailwind.config*, postcss.config*",
-    "next.config.*": "next.config.*, next-env.d.ts, vercel.*",
-    ".env.local": ".env*",
-    ".env": ".env*"
-  },
-  "files.exclude": {                                    // Arquivos/pastas ocultos do explorador.
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.vscode": true,
-    "**/*.log": true,
-    "**/*.next": true
-  },
 
   // === BREADCRUMBS ===
   "breadcrumbs.enabled": false,                         // Desativa breadcrumbs.
@@ -97,24 +44,7 @@
   "terminal.integrated.gpuAcceleration": "on",            // Aceleração GPU para terminal.
   "terminal.integrated.showExitAlert": false,             // Oculta alerta ao fechar terminal.
 
-  // === SUGESTÕES E IMPORTS ===
-  "javascript.suggest.autoImports": true,                  // Autoimport JS.
-  "typescript.suggest.autoImports": true,                  // Autoimport TS.
-  "javascript.updateImportsOnFileMove.enabled": "always",  // Atualiza imports ao mover arquivo JS.
-  "typescript.updateImportsOnFileMove.enabled": "always",  // Atualiza imports ao mover arquivo TS.
-  "typescript.preferences.preferTypeOnlyAutoImports": true,// Prefere "import type" em TS.
-
-  // === ESLINT ===
-  "eslint.validate": [                                     // Arquivos validados pelo ESLint.
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "graphql"
-  ],
-
   // === COMPORTAMENTO DO EDITOR ===
-  "editor.acceptSuggestionOnCommitCharacter": false,       // Não aceita sugestões com caractere de commit.
   "editor.accessibilitySupport": "off",                    // Desativa recursos de acessibilidade.
 
   // === GIT ===
@@ -123,22 +53,13 @@
   "git.confirmSync": false,                                // Sem confirmação ao sincronizar.
   "git.decorations.enabled": true,                         // Ativa decorações do Git no explorador.
 
-  // === GITLENS ===
-  "gitlens.codeLens.authors.enabled": true,                // Mostra autores nos arquivos.
-  "gitlens.codeLens.recentChange.enabled": true,           // Mostra alterações recentes.
-
   // === ATUALIZAÇÃO DO VS CODE ===
   "update.mode": "manual",                                 // Atualizações manuais.
   "update.showReleaseNotes": false,                        // Oculta notas de versão.
 
   // === SEGURANÇA E EXTENSÕES ===
   "security.workspace.trust.untrustedFiles": "newWindow",  // Abre arquivos não confiáveis em nova janela.
-  "liveServer.settings.donotShowInfoMsg": true,            // Oculta info do Live Server.
   "database-client.autoSync": true,                        // Sincronização automática em extensões de DB.
-
-  // === AUTO SALVAMENTO ===
-  "files.autoSave": "onFocusChange",                       // Salva ao mudar de aba.
-  "files.autoSaveDelay": 1000,                             // Delay para auto-save (em ms).
 
   // === NAVEGAÇÃO ENTRE ABAS ===
   "workbench.editor.enablePreview": false,                 // Desativa preview ao abrir arquivos.
@@ -146,15 +67,8 @@
   "workbench.editor.closeOnFileDelete": true,              // Fecha abas de arquivos deletados.
   "workbench.editor.showIcons": true,                      // Mostra ícones nas abas.
 
-  // === SUGESTÕES AVANÇADAS ===
-  "editor.suggest.snippetsPreventQuickSuggestions": false, // Snippets não bloqueiam sugestões rápidas.
-  "editor.suggest.showWords": true,                        // Mostra sugestões de palavras.
-  "editor.suggest.showSnippets": true,                     // Mostra snippets.
-  "editor.suggestSelection": "first",                      // Seleciona primeira sugestão por padrão.
-
   // === PERFORMANCE ===
   "search.followSymlinks": false,                          // Não segue symlinks em buscas.
   "extensions.autoCheckUpdates": false,                    // Não checa updates automáticos.
   "extensions.autoUpdate": false,                          // Não atualiza extensões automaticamente.
-  "workbench.editor.tabActionLocation": "right",           // Botões de ação em abas à direita.
 }
