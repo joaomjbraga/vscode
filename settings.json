@@ -48,5 +48,6 @@
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
   "explorer.confirmDelete": false,
-  "database-client.autoSync": true
+  "database-client.autoSync": true,
+  "editor.stickyScroll.enabled": false,
 }
